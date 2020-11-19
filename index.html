@@ -180,8 +180,9 @@
                 </menu>
               </li>
               <li><font color='blue'>Track 2:</font> Data challenge track. </li>
-              <li>The data challenge track is designed to bring together researchers and practitioners to work on IR-specific problems on conversational 
+              <li> <p>The data challenge track is designed to bring together researchers and practitioners to work on IR-specific problems on conversational 
                 dialogues. The objective of the data track is to automatically contextualize a multi-party dialogue system as detailed below.
+                </p>
                 <p>
                 Traditional information retrieval (IR) involves retrieving relevant documents from a collection given a user query (usually comprised of a small number 
                 of keywords). With the advancement of automated dialog systems, using IR models as a component in such dialog-based interactive systems has 
@@ -218,10 +219,29 @@
         </p>
       
       <h5>Dataset Description </h5>
-      
-      To study the problem under a laboratory-based reproducible setting, we propose a number of simplifications.First, since collecting multi-party chat dialogues can lead to indi-vidual privacy concerns, items requiring contextualization. Usingmovie scripts as a starting point, the task requires participantsto retrieve relevant information from Wikipedia given a dialoguespan from a movie script. The task of the participants is to identifyimportant or central entities in a span of movie dialogues and tosubsequently retrieve a list of passages that provide more contextor information about entities in that span. The annotated span oftext (i.e. the one requiring contextualization) will not be disclosedto the participants. One such example is the underlined span oftext (requiring contextualization) from the movie ‘12 angry men’shown as follows.Example-1:A part of dialogue act from the movie ‘12 angry men’.NO.2:guilty. I thought it was obvious. I mean nobody proved oth-erwise.NO. 8:is on the prosecution. The defendant doesn’t have to openhis mouth. That’s in the Constitution. TheFifth Amendment.You’ve heard of it.NO. 2:  I... what I meant... well, anyway, I think he was guilty.We selected a number ofplay-stylemovie scripts for annotation, i.e.the ones which involve long dialogue acts for plot development.The participants are provided with a manually annotated sam-ple of dialogue spans extracted from four movie scripts along withentire movie scripts. The collection from which passages are to be re-trieved for contextualization is the Wikipedia collection (dump from20194). Each document in the Wikipedia collection is composed ofexplicitly marked-up passages (in the form of the paragraph tags).The retrievable units in our task are the passages (instead of wholedocuments).
+      <p>
+      To study the problem under a laboratory-based reproducible setting, we propose a number of simplifications. First, since collecting multi-party chat dialogues
+      can lead to individual privacy concerns, items requiring contextualization. Using movie scripts as a starting point, the task requires participants to retrieve
+      relevant information from Wikipedia given a dialogue span from a movie script. The task of the participants is to identify important or central entities in a
+      span of movie dialogues and to subsequently retrieve a list of passages that provide more contextor information about entities in that span. The annotated 
+      span oftext (i.e. the one requiring contextualization) will not be disclosed to the participants. One such example is the underlined span of text (requiring
+      contextualization) from the movie ‘12 angry men’shown as follows.
+      </p>
+      <p>
+      Example-1:A part of dialogue act from the movie ‘12 angry men’.
       <br>
- 
+        NO.2:guilty. I thought it was obvious. I mean nobody proved otherwise.
+      <br>
+        NO. 8:is on the prosecution. The defendant doesn’t have to openhis mouth. That’s in the Constitution. TheFifth Amendment.You’ve heard of it.
+      <br>
+        NO. 2:  I... what I meant... well, anyway, I think he was guilty.
+      <br>
+        We selected a number of play-style movie scripts for annotation, i.e.the ones which involve long dialogue acts for plot development.The participants 
+        are provided with a manually annotated sample of dialogue spans extracted from four movie scripts along with entire movie scripts. The collection from 
+        which passages are to be retrieved for contextualization is the Wikipedia collection (dump from 2019). Each document in the Wikipedia collection is 
+        composed of explicitly marked-up passages (in the form of the paragraph tags).The retrievable units in our task are the passages (instead of 
+        wholedocuments).
+      
         <h3>Evaluation Metrics</h3>
          <p class="description">
          <ul>
