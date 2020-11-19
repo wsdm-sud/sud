@@ -143,40 +143,25 @@
         require contextualization, and retrieve a ranked list of Wikipedia passages corresponding to this concept.
         <br>
  
-        <h3> Tasks </h3> 
-        There are two separate tasks. Each team can participate in any one or both the tasks. The first task is entity linking whereas the second 
-        pertains to retrieving relevant information about identified entities.  
+        <h3> THEME AND STRUCTURE OF THE WORKSHOP </h3> 
+        The proposed workshop will consist of two tracks: (1) a regular research paper track, and (2) a data challenge track.  
         <br>
         
         <!--With the main task of retrieving passages corresponding to a dialogue, we also ask the participants to participate optionally
         in a stand-alone information extraction (IE) task, where the objective would be to output the span of text corresponding to the information need.
         A participant could choose one or both of the tasks to participate.-->
-        Following are the two tasks. 
+        Following are the two tracks. 
           <ul>
-              <li><font color='blue'>Task 1:</font>  Given an excerpt of a dialogue act as shown in example above, output the span of text indicating
-                a potential piece of information need (requiring contextualization), i.e., in case of the above example,
-                output the text <font color='green'>Fifth Amendment</font>.</li>
-              <li><font color='blue'>Task 2:</font> Given an excerpt of a dialogue act (see above example),
-                return a ranked list of passages containing information on the topic of the information need (requiring contextualization),
-                i.e., with respect to the above example return passages from Wikipedia that contain information on the
-                <font color='green'>Fifth Amendment</font>.</li>
+              <li><font color='blue'>Track 1:</font> Regular research paper track. </li>
+              <li> Theregular research paper trackwill solicit contributions relatedto the theme of supporting and understanding of conversationaldialogues, which includes (but is not limited to):•Multi-modal and multi-view Information Retrieval – aggre-gating information from multiple online and offline datasources (including text, images, and video) to support con-versations.•Addressing the code-mixed and noisy, informal vocabularyof conversations.•Transfer learning – applying models trained on prior datasetson a new type of conversations.•Summarization of conversational dialogues.•Information Extraction from conversational dialogues, e.g.extracting action-items, decisions and their criteria fromgroup meetings.•Conversational IR, covering topics such as–retrieving relevant pieces of information correspondingto information needs arising out from conversations.–Ways of presenting relevant information through interac-tive dialogues.–Asking clarifying questions to enrich information needdescription. </li>
+              <li><font color='blue'>Track 2:</font> Data challenge track. </li>
+              <li>The data challenge track is designed to bring together researchersand practitioners to work on IR-specific problems on conversa-tional dialogues. The objective of the data track is to automaticallycontextualize a multi-party dialogue system as detailed below.Traditional information retrieval (IR) involves retrieving relevantdocuments from a collection given a user query (usually comprisedof a small number of keywords). With the advancement of auto-mated dialog systems, using IR models as a component in suchdialog-based interactive systems has increasingly drawn attentionof the research community. Conversational IR is potentially usefulto retrieve relevant documents or passages towards constructingan answer for a query/question seeking information on a particulartopic during an interactive chat-session. An example use-case is anautomated customer-care chat-bot that seeks to answer a specific user query (e.g. ‘How do I restart my Macbook?’) with a relevant an-swer (the information feeding in to the relevant answer formulatedby either directly retrieving previous responses or constructingthem automatically from retrieving candidate passages).Different from the existing notion of conversational IR, involvingretrieving previous responses or passages from a collection to aid aninteractive chat-bot[2,4], the focus of our work is to supplement in-formation for a particular topic within a two or multi-party dialoguewith relevant information that contextualizes the conversation it-self. As an example, consider the situation when two persons (letus call them A and B) are chatting to each other through a chatserver, e.g. Google Hangouts, Whatsapp etc. It may happen that Atalks about a topic or event of which B is not fully aware of. In thatcase, the chat server (in addition to sending the message from Acould contextualize the message with additional information). As aconcrete example, with A’s following message -A:  “I absolutely loved dark.”,B may have trouble making sense of this sentence in its literalform unless they know that the entity ‘Dark’ in this context refersto a popular Netflix series. However, it could be easier for B tounderstandand come up with a prompt response to the messageif the chat-server provides this additional information to B as apart of the message itself. From the user interface perspective, Amay not even be aware of this automatic contextualization by theconversational assistance agent and to them it appears as if B cameup with a prompt response. Figure 1 schematically depicts thissituation with an example communication between two parties.The purpose of the data challenge track thus is to encourageresearch on methodologies that are able to proactively recognizepotential entities in the conversation that might require further elaboration (from the point-of-view of the user to whom the conver-sation was targeted)andalso retrieves informative content aboutthese entities so to facilitate better participation in the conversa-tion. Although prior work has looked into contextualizing shortdocuments, such as tweets [5,6], the proposed data challenge trackrequires contextualizing the individual aspects of a conversation.</li>
           </ul>
         </p>
       
-      <h5>Training and Test Phases </h5>
+      <h5>Dataset Description </h5>
       
-      During the training phase, we will release two pieces of information, namely i) a conversation piece from a movie script and ii) the span of text
-      comprising the concept requiring contextualization. 
-      During the test phase, we will release only the conversation piece.
-      Participants in Task-1
-      would then need to find the relevant piece of text from a given conversation, e.g. find 'Fifth Amendment' from the text excerpt in the above example.
-      Participants in Task-2 only may not need to explicitly find 'Fifth Amendment' from the text. Rather they need to find documents (Wiki passages) from
-      the given collection that provide information on this particular topic. 
-      
-        Although the tasks are independent, we believe that scoring well on Task-1 will benefit the effectiveness of Task-2 as well. This is because,
-      as the given conversation context may be quite diverse in terms of topics, identifying a suitable topic could help to construct a well-formed
-      query that could help retrieve a more focussed list of documents. A too verbose query on the other hand (a simple approach could be to use the
-      entire context as the query) may not retrieve relevant documents corresponding to the information need (Fifth Amendment in the example).
+      To study the problem under a laboratory-based reproducible setting, we propose a number of simplifications.First, since collecting multi-party chat dialogues can lead to indi-vidual privacy concerns, items requiring contextualization. Usingmovie scripts as a starting point, the task requires participantsto retrieve relevant information from Wikipedia given a dialoguespan from a movie script. The task of the participants is to identifyimportant or central entities in a span of movie dialogues and tosubsequently retrieve a list of passages that provide more contextor information about entities in that span. The annotated span oftext (i.e. the one requiring contextualization) will not be disclosedto the participants. One such example is the underlined span oftext (requiring contextualization) from the movie ‘12 angry men’shown as follows.Example-1:A part of dialogue act from the movie ‘12 angry men’.NO.2:guilty. I thought it was obvious. I mean nobody proved oth-erwise.NO. 8:is on the prosecution. The defendant doesn’t have to openhis mouth. That’s in the Constitution. TheFifth Amendment.You’ve heard of it.NO. 2:  I... what I meant... well, anyway, I think he was guilty.We selected a number ofplay-stylemovie scripts for annotation, i.e.the ones which involve long dialogue acts for plot development.The participants are provided with a manually annotated sam-ple of dialogue spans extracted from four movie scripts along withentire movie scripts. The collection from which passages are to be re-trieved for contextualization is the Wikipedia collection (dump from20194). Each document in the Wikipedia collection is composed ofexplicitly marked-up passages (in the form of the paragraph tags).The retrievable units in our task are the passages (instead of wholedocuments).
       <br>
  
         <h3>Evaluation Metrics</h3>
