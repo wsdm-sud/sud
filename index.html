@@ -171,18 +171,18 @@
                    <li> Summarization of conversational dialogues.</li>
                    <li> Information Extraction from conversational dialogues, e.g.extracting action-items, decisions and their criteria fromgroup meetings.</li>
                    <li> Conversational IR, covering topics such as
-                      <ul>
+                      <menu>
                         <li> retrieving relevant pieces of information correspondingto information needs arising out from conversations.</li>
                         <li> Ways of presenting relevant information through interactive dialogues.</li>
                         <li> Asking clarifying questions to enrich information needdescription.</li>
-                     </ul>
+                     </menu>
                    </li>
                 </menu>
               </li>
               <li><font color='blue'>Track 2:</font> Data challenge track. </li>
               <li>The data challenge track is designed to bring together researchers and practitioners to work on IR-specific problems on conversational 
-                dialogues. The objective of the data track is to automaticallycontextualize a multi-party dialogue system as detailed below.
-                
+                dialogues. The objective of the data track is to automatically contextualize a multi-party dialogue system as detailed below.
+                <p>
                 Traditional information retrieval (IR) involves retrieving relevant documents from a collection given a user query (usually comprised of a small number 
                 of keywords). With the advancement of automated dialog systems, using IR models as a component in such dialog-based interactive systems has 
                 increasingly drawn attention of the research community. Conversational IR is potentially useful to retrieve relevant documents or passages 
@@ -190,21 +190,25 @@
                 use-case is anautomated customer-care chat-bot that seeks to answer a specific user query (e.g. ‘How do I restart my Macbook?’) with a relevant 
                 answer (the information feeding in to the relevant answer formulated by either directly retrieving previous responses or constructing them 
                 automatically from retrieving candidate passages). 
-                
-                
+                </p>
+                <p>
                 Different from the existing notion of conversational IR, involving retrieving previous responses or passages from a collection to aid an interactive chat-bot, the focus of our work is to supplement information for a particular 
                 topic within a two or multi-party dialogue with relevant information that contextualizes the conversation itself. As an example, consider the
                 situation when two persons (let us call them A and B) are chatting to each other through a chatserver, e.g. Google Hangouts, Whatsapp etc. 
                 It may happen that A talks about a topic or event of which B is not fully aware of. In that case, the chat server (in addition to sending 
                 the message from A could contextualize the message with additional information). As a concrete example, with A’s following message -
-                
+                </p>
+                <p>
                 A: “I absolutely loved dark.”,
-                
+                </p>
+                <p>
                 B may have trouble making sense of this sentence in its literal form unless they know that the entity ‘Dark’ in this 
                 context refers to a popular Netflix series. However, it could be easier for B to understand and come up with a prompt response to the message 
                 if the chat-server provides this additional information to B as apart of the message itself. From the user interface perspective, A may not 
                 even be aware of this automatic contextualization by the conversational assistance agent and to them it appears as if B came up with a prompt 
                 response. Figure 1 schematically depicts this situation with an example communication between two parties.
+                </p>
+                <p>
                 
                 The purpose of the data challenge track thus is to encourage research on methodologies that are able to proactively recognize potential entities in the conversation that might require 
                 further elaboration (from the point-of-view of the user to whom the conversation was targeted)and also retrieves informative content about these 
