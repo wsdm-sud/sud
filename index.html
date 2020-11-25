@@ -224,7 +224,7 @@
         </p>
       <section id="dataset" class="dataset">
     
-      <h5>Dataset Description </h5>
+      <h1>Dataset Description </h1>
       <p>
       To study the problem under a laboratory-based reproducible setting, we propose a number of simplifications. First, since collecting multi-party chat dialogues
       can lead to individual privacy concerns, items requiring contextualization. Using movie scripts as a starting point, the task requires participants to retrieve
@@ -249,6 +249,46 @@
         composed of explicitly marked-up passages (in the form of the paragraph tags).The retrievable units in our task are the passages (instead of 
         whole documents).
       </p>
+        <p>
+          The dataset for this track comprises of:
+        <ul>
+        <li> <b>Document Collection</b>: The objective in this track (Task-2) is to retrieve a ranked list of Wikipedia passages. We release a pre-processed version of Wikipedia
+dump, where we have enclosed each paragraph of a Wikipedia page into separate XML tags. Each tag is assigned a unique identifier. The basic retrieval unit for this ranking
+task is hence a Wikipedia passage. Note that it's up to you if you want to treat the passages as units contained within a document or treat them independently while ranking them.
+Each passage has been (and will be) judged independently.
+          
+          There are two options for the collection that you can download.
+          <ul>
+          <li> A TREC formatted markup document that for the passage demarcated Wikipedia collection from this
+<a href="https://drive.google.com/file/d/1JgiYwTXMkoAUaWzgDeL7LQP5r-G-ReAM/view?usp=sharing">Google drive link</a>.
+          </li>
+          <li> A more simplified format (a tab separated file text file) containing the passage id in the first column and passage content in the second.
+                    You can get the gzipped file from this <a href="https://drive.google.com/file/d/1iujCKja301ciGnk3nvErUJebF7_Tc7pD/view?usp=sharing">Google drive link</a>.
+          </li>
+          </ul>
+          
+          A sample mavenized Lucene project to help the participants get started with indexing and retrieval can be found
+          <a href="https://github.com/gdebasis/luc4ir">here</a>.
+          
+        </li>
+        <li> <b> Queries/Topics: </b> A query for the ranking task contains a dialog piece from a movie. The topic file is similar in structure to a standard TREC query.
+        Each query (topic) starts with a <b>topic</b> tag. The <b>num</b> tag assigns a unique identifier to the topic. You have to use these ids in the output <b>results</b>
+file (more on this later). Each topic has a <b>desc</b> tag which contains a list of dialogues enclosed within '<b>p</b>' tags. Each 'p' tag indicates a change of speaker.
+Some topics have identical description fields because while annotating we identified multiple concepts from the same dialog piece that may require contextualization.
+In such a case, the one with a smaller number is associated to the concept which occurs in the text before the other corresponding to the larger number.
+In addition to the 'desc' field, the training topics contains an additional <b>title </b> field which describes the exact span of text representing the information need.
+We make this information available for the participants to get an idea about the types of text spans that would typically require contextualization from dialog streams.
+
+        </li>
+        <li><b>Relevance Judgments: </b> For the training set of topics, we release a <b>TREC qrel</b> formatted file with 4 white-space separated columns, the first column
+denoting query id, the second unused, the third - a string denoting the passage (basic retrieval unit) identifier and the fourth indicating the relevance label (1/0) in our case.
+The training topics along with the relevance judgments can be downloaded from this <a href="https://github.com/rcd2020firetask/RCD2020FIRETASK/tree/master/Train">link to training data</a>. To obtain the relevance assessments, we constructed a pool of passages by a combination of retrieval with a number of standard IR models, such as BM25, LM, DFR etc. Passages in the pool were assessed by the organizors with respect to each input dialogue.
+For test topics, we will add the documents collected from the participating systems in the pool and
+reevaluate the extended pool.
+        </li>
+        </ul>
+        
+        </p>
       <ul>
         <li> <font color='blue'> Tasks. </font> Based on the two different threads of potential research investigation with the dataset, we will invite 
           participation in two distinct tasks. Each participating team can participate in any one or both the tasks described as follows.
@@ -377,43 +417,6 @@
 
           <p class='text-left'>
             <!--To facilitate easy participation in the task, we will indexed version of the collection.-->
-        The dataset for this track comprises of:
-        <ul>
-        <li> <b>Document Collection</b>: The objective in this track (Task-2) is to retrieve a ranked list of Wikipedia passages. We release a pre-processed version of Wikipedia
-dump, where we have enclosed each paragraph of a Wikipedia page into separate XML tags. Each tag is assigned a unique identifier. The basic retrieval unit for this ranking
-task is hence a Wikipedia passage. Note that it's up to you if you want to treat the passages as units contained within a document or treat them independently while ranking them.
-Each passage has been (and will be) judged independently.
-          
-          There are two options for the collection that you can download.
-          <ul>
-          <li> A TREC formatted markup document that for the passage demarcated Wikipedia collection from this
-<a href="https://drive.google.com/file/d/1JgiYwTXMkoAUaWzgDeL7LQP5r-G-ReAM/view?usp=sharing">Google drive link</a>.
-          </li>
-          <li> A more simplified format (a tab separated file text file) containing the passage id in the first column and passage content in the second.
-                    You can get the gzipped file from this <a href="https://drive.google.com/file/d/1iujCKja301ciGnk3nvErUJebF7_Tc7pD/view?usp=sharing">Google drive link</a>.
-          </li>
-          </ul>
-          
-          A sample mavenized Lucene project to help the participants get started with indexing and retrieval can be found
-          <a href="https://github.com/gdebasis/luc4ir">here</a>.
-          
-        </li>
-        <li> <b> Queries/Topics: </b> A query for the ranking task contains a dialog piece from a movie. The topic file is similar in structure to a standard TREC query.
-        Each query (topic) starts with a <b>topic</b> tag. The <b>num</b> tag assigns a unique identifier to the topic. You have to use these ids in the output <b>results</b>
-file (more on this later). Each topic has a <b>desc</b> tag which contains a list of dialogues enclosed within '<b>p</b>' tags. Each 'p' tag indicates a change of speaker.
-Some topics have identical description fields because while annotating we identified multiple concepts from the same dialog piece that may require contextualization.
-In such a case, the one with a smaller number is associated to the concept which occurs in the text before the other corresponding to the larger number.
-In addition to the 'desc' field, the training topics contains an additional <b>title </b> field which describes the exact span of text representing the information need.
-We make this information available for the participants to get an idea about the types of text spans that would typically require contextualization from dialog streams.
-
-        </li>
-        <li><b>Relevance Judgments: </b> For the training set of topics, we release a <b>TREC qrel</b> formatted file with 4 white-space separated columns, the first column
-denoting query id, the second unused, the third - a string denoting the passage (basic retrieval unit) identifier and the fourth indicating the relevance label (1/0) in our case.
-The training topics along with the relevance judgments can be downloaded from this <a href="https://github.com/rcd2020firetask/RCD2020FIRETASK/tree/master/Train">link to training data</a>. To obtain the relevance assessments, we constructed a pool of passages by a combination of retrieval with a number of standard IR models, such as BM25, LM, DFR etc. Passages in the pool were assessed by the organizors with respect to each input dialogue.
-For test topics, we will add the documents collected from the participating systems in the pool and
-reevaluate the extended pool.
-        </li>
-        </ul>
           
         </p>
 
