@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>RCD FIRE Task 2020</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Amoeba - v2.0.0
+  * Template URL: https://bootstrapmade.com/free-one-page-bootstrap-template-amoeba/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="index.html"><span>RCD-2020</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">Task Description</a></li>
+          <li><a href="#services">Guidelines</a></li>
+          <li><a href="#dataset">Dataset</a></li>
+          <li><a href="#team">Organizers</a></li>
+          <li><a href="#results">Important Dates</a></li>
+          <li><a href="#contact1">Results</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>RCD-2020 (Retrieval From Conversational Dialogues)</h1>
+      <h2>A FIRE 2020 Shared Task</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+            <h2>Task motivation and description</h2>
+        </div>
+
+        <div class="row" >
+         <div class="col-lg-6 order-1 order-lg-2">
+            <img src="fakechat-B.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+            <h3>Motivation</h3>
+            <p class="description">
+            Application of Information retrieval (IR) systems in dialogue based interactive systems has increasingly drawn attention from the research community. IR systems can be used to retrieve relevant information that can be used either for system generated answers or to add more context about a particular topic during an interactive dialogue between two entities. We explore the utility of IR systems to retrieve more information about entities discussed in interactive dialogues in this task.
+            </p>
+            <h3>Description</h3>
+            <p class="description">
+            The objective of the proposed track, to be organized as a part of <a href="http://fire.irsi.res.in/fire/2020/home">FIRE 2020</a>, is to automatically contextualize two-party or multi-party dialogue systems. We explore the utility of IR systems to retrieve more information about entities discussed in interactive dialogues. To study the problem under a laboratory-based reproducible setting, we propose a number of simplifications. First, since collecting multi-party chat dialogues can lead to individual privacy concerns, items requiring contextualization. Using movie scripts as a starting point, the task requires participants to retrieve relevant information from wikipedia given a dialogue span from a movie script. The task of the participants is to identify important or central entities in a span of movie dialogues and to subsequently retrieve a list of passages that provide more context or information about entities in that span. The annotated span of text (i.e. the one requiring contextualization) will not be disclosed to the participants. Instead, they need to estimate the information need from the given conversation. As an example, given the excerpt of the example script from the movie ‘12 angry men’, a simple approach would be to execute the whole script as a query and retrieve a ranked list of documents from a collection. Participants are encouraged to explore different methods to identify/formulate the query from the dialogue and then proceed with the retrieval step. 
+           </p>
+           <p class="description">
+            The participants are provided with a manually annotated sample of dialogue spans extracted from four movie scripts along with entire movie scripts. The collection from which passages are to be retrieved for contextualization is the Wikipedia collection (dump from 2019). Each document in the Wikipedia collection is composed of explicitly marked-up passages (in the form of the paragraph tags). The retrievable units in our task are the passages (instead of whole documents).
+            </p>
+            <!--
+            <ul>
+              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="about section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2> Guidelines</h2>
+        </div>
+          <p class="description">
+          For the RCD track, we have chosen conversations from movie scripts that constitute situations requiring contextualization.
+            These are long conversations between one or more actors.
+            One such example is the highlighted span of text (requiring contextualization) from the movie <a href="https://www.imdb.com/title/tt0050083/">12 angry men</a>
+            as shown below.
+          <div class="row">
+          <ul class='text-center' >
+            <font face='courier'>
+              <li><font color='red'> NO2:</font> guilty. I thought it was obvious. I mean nobody proved otherwise.</li>
+              <li><font color='blue'> NO8:</font>  is on the prosecution. The defendant doesn’t have to open his mouth. That’s in the Constitution. <font color='green'>The Fifth Amendment</font>. You’ve heard of it.</li>
+              <li><font color='red'> NO2:</font>  I... what I meant... well, anyway, I think he was guilty.</li>
+            </font>
+          </ul>
+          </div>
+        In the above piece of conversation example, the goal is to develop a system that will identify that Fifth Amendment is the piece of text that may
+        require contextualization, and retrieve a ranked list of Wikipedia passages corresponding to this concept.
+        <br>
+ 
+        <h3> Tasks </h3> 
+        There are two separate tasks. Each team can participate in any one or both the tasks. The first task is entity linking whereas the second 
+        pertains to retrieving relevant information about identified entities.  
+        <br>
+        
+        <!--With the main task of retrieving passages corresponding to a dialogue, we also ask the participants to participate optionally
+        in a stand-alone information extraction (IE) task, where the objective would be to output the span of text corresponding to the information need.
+        A participant could choose one or both of the tasks to participate.-->
+        Following are the two tasks. 
+          <ul>
+              <li><font color='blue'>Task 1:</font>  Given an excerpt of a dialogue act as shown in example above, output the span of text indicating
+                a potential piece of information need (requiring contextualization), i.e., in case of the above example,
+                output the text <font color='green'>Fifth Amendment</font>.</li>
+              <li><font color='blue'>Task 2:</font> Given an excerpt of a dialogue act (see above example),
+                return a ranked list of passages containing information on the topic of the information need (requiring contextualization),
+                i.e., with respect to the above example return passages from Wikipedia that contain information on the
+                <font color='green'>Fifth Amendment</font>.</li>
+          </ul>
+        </p>
+      
+      <h5>Training and Test Phases </h5>
+      
+      During the training phase, we will release two pieces of information, namely i) a conversation piece from a movie script and ii) the span of text
+      comprising the concept requiring contextualization. 
+      During the test phase, we will release only the conversation piece.
+      Participants in Task-1
+      would then need to find the relevant piece of text from a given conversation, e.g. find 'Fifth Amendment' from the text excerpt in the above example.
+      Participants in Task-2 only may not need to explicitly find 'Fifth Amendment' from the text. Rather they need to find documents (Wiki passages) from
+      the given collection that provide information on this particular topic. 
+      
+        Although the tasks are independent, we believe that scoring well on Task-1 will benefit the effectiveness of Task-2 as well. This is because,
+      as the given conversation context may be quite diverse in terms of topics, identifying a suitable topic could help to construct a well-formed
+      query that could help retrieve a more focussed list of documents. A too verbose query on the other hand (a simple approach could be to use the
+      entire context as the query) may not retrieve relevant documents corresponding to the information need (Fifth Amendment in the example).
+      <br>
+ 
+        <h3>Evaluation Metrics</h3>
+         <p class="description">
+         <ul>
+              <li><font color='blue'>Task 1:</font> For task-1 (information extraction), we will use the overlap of the ground-truth text span (e.g. ‘<font color='green'>fifth amendment</font>’) and the predicted text span (e.g. ‘Constitution. The Fifth Amendment’) with the Jacard coefficient measure. Exact match would lead to a Jacard coefficient of 1, and false positives or false negatives would penalize a predictive approach.
+              </li>
+              <li><font color='blue'>Task 2:</font> For task-2 (passage retrieval), we will use mean average precision (MAP) to compare and evaluate different approaches. This metric would favour systems that retrieve a higher number of relevant passages towards the top ranks.</li>
+        </ul>
+         </p>
+        <!--
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-computer"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+        </div>
+      -->
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id='dataset' class="about">
+      <div class="container">
+
+        <div class="text-center">
+          <h3>Dataset</h3>
+        </div>
+        <div>
+          <p class='text-left'>
+            The movie scripts that were chosen to depict situations requiring contextualization involve relatively long conversations between one or more actors.
+            For each movie script, we <b>annotated a span of text</b> that were manually assessed to be indicative of potential contextualization as shown in section above. 
+          We selected a number of play-style movie scripts for annotation, i.e. the ones which involve long dialogue acts for plot development. In total, we annotated 4 movie scripts, namely</p>
+          <div class="row">
+          <div class="col-lg-12">
+            <center>
+          <ul>
+            <li><a href="https://www.imdb.com/title/tt0138704/">Pi</a> </li>
+            <li><a href="https://www.imdb.com/title/tt0050083/">12 angry men</a></li>
+            <li><a href="https://www.imdb.com/title/tt0119217/">Good will hunting</a></li>
+            <li><a href="https://www.imdb.com/title/tt0091605/">The name of the rose</a></li>
+            <!--li><a href="https://www.imdb.com/title/tt0049833">The Ten Commandments </a></li-->
+          </ul>
+            </center>
+          </div>
+            The text extracted from the movie script along with the <a href="https://brat.nlplab.org/"> &nbsp; BRAT &nbsp;</a> formatted annotation file can be found&nbsp;
+      <a href="https://github.com/rcd2020firetask/RCD2020FIRETASK/tree/master/dialogues">here</a>.         
+          </div>
+
+          <p class='text-left'>
+            <!--To facilitate easy participation in the task, we will indexed version of the collection.-->
+        The dataset for this track comprises of:
+        <ul>
+        <li> <b>Document Collection</b>: The objective in this track (Task-2) is to retrieve a ranked list of Wikipedia passages. We release a pre-processed version of Wikipedia
+dump, where we have enclosed each paragraph of a Wikipedia page into separate XML tags. Each tag is assigned a unique identifier. The basic retrieval unit for this ranking
+task is hence a Wikipedia passage. Note that it's up to you if you want to treat the passages as units contained within a document or treat them independently while ranking them.
+Each passage has been (and will be) judged independently.
+          
+          There are two options for the collection that you can download.
+          <ul>
+          <li> A TREC formatted markup document that for the passage demarcated Wikipedia collection from this
+<a href="https://drive.google.com/file/d/1JgiYwTXMkoAUaWzgDeL7LQP5r-G-ReAM/view?usp=sharing">Google drive link</a>.
+          </li>
+          <li> A more simplified format (a tab separated file text file) containing the passage id in the first column and passage content in the second.
+                    You can get the gzipped file from this <a href="https://drive.google.com/file/d/1iujCKja301ciGnk3nvErUJebF7_Tc7pD/view?usp=sharing">Google drive link</a>.
+          </li>
+          </ul>
+          
+          A sample mavenized Lucene project to help the participants get started with indexing and retrieval can be found
+          <a href="https://github.com/gdebasis/luc4ir">here</a>.
+          
+        </li>
+        <li> <b> Queries/Topics: </b> A query for the ranking task contains a dialog piece from a movie. The topic file is similar in structure to a standard TREC query.
+        Each query (topic) starts with a <b>topic</b> tag. The <b>num</b> tag assigns a unique identifier to the topic. You have to use these ids in the output <b>results</b>
+file (more on this later). Each topic has a <b>desc</b> tag which contains a list of dialogues enclosed within '<b>p</b>' tags. Each 'p' tag indicates a change of speaker.
+Some topics have identical description fields because while annotating we identified multiple concepts from the same dialog piece that may require contextualization.
+In such a case, the one with a smaller number is associated to the concept which occurs in the text before the other corresponding to the larger number.
+In addition to the 'desc' field, the training topics contains an additional <b>title </b> field which describes the exact span of text representing the information need.
+We make this information available for the participants to get an idea about the types of text spans that would typically require contextualization from dialog streams.
+
+        </li>
+        <li><b>Relevance Judgments: </b> For the training set of topics, we release a <b>TREC qrel</b> formatted file with 4 white-space separated columns, the first column
+denoting query id, the second unused, the third - a string denoting the passage (basic retrieval unit) identifier and the fourth indicating the relevance label (1/0) in our case.
+The training topics along with the relevance judgments can be downloaded from this <a href="https://github.com/rcd2020firetask/RCD2020FIRETASK/tree/master/Train">link to training data</a>. To obtain the relevance assessments, we constructed a pool of passages by a combination of retrieval with a number of standard IR models, such as BM25, LM, DFR etc. Passages in the pool were assessed by the organizors with respect to each input dialogue.
+For test topics, we will add the documents collected from the participating systems in the pool and
+reevaluate the extended pool.
+        </li>
+        </ul>
+          
+        </p>
+
+        <!--div class='text-left'>
+        In the training phase we release 25 dialogue acts making explicitly available the annotated text spans to the participants by marking them up. The participants can then make use the dialogue in order to formulate queries for retrieving relevant passages. 
+For task 1 the output will be in the format &lt;qid&gt; &lt;Tab&gt; &lt;Information Need&gt;. Each topic will be in newline. For task 1 the link for the wikipedia collection is here <a href="https://drive.google.com/file/d/1JgiYwTXMkoAUaWzgDeL7LQP5r-G-ReAM/view?usp=sharing">Wikipedia Collection</a>.
+        For Task 2, the output format will be same as trec result format. 
+        </div-->
+
+        <!--div class='text-left'>
+        In the test phase, we will release only the entire dialogue act without the explicit annotation of the precise information need and the relevance judgments (to represent a more realistic situation). The participants are expected to develop and tune their methodologies on the training set and submit the results with optimal configurations of the system on the test set.
+        The link for test data set is here <a href="https://github.com/rcd2020firetask/RCD2020FIRETASK/blob/master/test.txt">Test Data</a>.
+        </div-->
+
+    <p class="text-left">
+    <h3> Run Submission Format </h3>
+    For each query in the <a href="https://github.com/rcd2020firetask/RCD2020FIRETASK/blob/master/test.txt">test topic file</a>, the participants need to submit automatically generated outputs one or both the tasks.
+
+    <ul>
+
+    <li><b>Task-1:</b> Participants need to submit a two column file where each line contains the query id and the predicted text span from the given description.
+    An example task-1 submission file looks like
+    <div align="center">
+    <pre>
+    1 [\t] That's in the Constitution. The Fifth Amendment.
+    4 [\t] cute little switchknife
+    ...
+    ...
+    </pre>
+    </div>
+    </li>
+
+    <li><b>Task-2:</b> Participants need to submit a standard TREC .res formatted file comprising of the following. The first column denotes query id (matches the ids of the test topics), the second is unused, the third is the retrieved document (Wiki passage) identifier, the fourth is the rank of this document (passage), the fifth is the similarity score and the sixth column denotes a run-name to distinguish between different runs (the run-name should be meaningful and representative of the method used to generate the run).
+    An example task-2 submission file looks like
+    <div align="center">
+    <pre>
+    1	Q0	10046153-34	1 13.23 BM25_termselection
+    1	Q0	10275774-4	2 12.58 BM25_termselection
+    ...
+    ...
+    2	Q0	5202223-19	1 7.64 BM25_termselection
+    2	Q0	527390-11	2 7.37 BM25_termselection
+    ...
+    ...
+    </pre>
+    </div>
+    </ul>    
+    </div>
+
+      
+    Note that since the retrievable units for our track are Wikipedia passages (not documents), in the collection provided we have assigned unique identifiers
+      to passages. The naming convention for a passage is <b>doc number</b>-<b>passage offset</b>, i.e. two integers separated by a hyphen character
+      (encoded within the <b>pno</b> tags within the collection provided).
+    Task-2 participants will be required to print these identifiers in the third column of the run submission file. Using other arbitrary identifiers
+    would not enable us to match the relevant retrieved passages from the ones in the qrel file. A sample XML excerpt for a Wikipedia document, titled
+<a href="https://en.wikipedia.org/wiki/Anarchism">Anarchism</a> is shown below. 
+</p>
+<br>
+<br>
+<br>
+
+<p>      
+<textarea rows="35" cols="80" style="border:none;">
+<doc>
+ <docno> 2 </docno>
+<page>
+<p>
+ <pno> 2-1 </pno>
+    <title>Anarchism</title>
+    <ns>0</ns>
+    <id>12</id>
+    <revision>
+      <id>918470367</id>
+      <parentid>918111101</parentid>
+      <timestamp>2019-09-28T20:40:50Z</timestamp>
+      <contributor>
+        <username>Brainulator9</username>
+        <id>11191612</id>
+      </contributor>
+      <comment>/* Sources */Remove redundant |year= parameter from CS1 citations;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{good article}}
+{{redirect2|Anarchist|Anarchists|other uses|Anarchists (disambiguation)}}
+{{pp-move-indef}}
+{{short description|Political philosophy that advocates self-governed societies}}
+{{use dmy dates|date=July 2018}}
+{{use British English|date=January 2014}}
+{{anarchism sidebar}}
+{{basic forms of government}}
+'''Anarchism''' is an [[Anti-authoritarianism|anti-authoritarian]] [[political philosophy]]{{sfnm|1a1=McLaughlin|1y=2007|1p=59|2a1=Flint|2y=2009|2p=27}} that rejects [[Hierarchy|hierarchies]] deemed unjust and advocates their replacement with [[Workers' self-management|self-managed]], [[Self-governance|self-governed]] societies based on voluntary, [[cooperative]] institutions. These institutions are often described as [[Stateless society|stateless societies]],{{sfnm|1a1=Sheehan|1y=2003|1p=85|2a1=Craig|2y=2005|2p=14}} although several authors have defined them more specifically as distinct institutions based on non-hierarchical or [[Free association (communism and anarchism)|free associations]].{{sfn|Suissa|2006|p=7}} Anarchism's central disagreement with other ideologies is that it holds the [[Sovereign state|state]] to be undesirable, unnecessary, and harmful.{{sfnm|1a1=McLean|1a2=McMillan|1y=2003|loc=Anarchism|2a1=Craig|2y=2005|2p=14}}
+</p>
+</textarea>
+  </p>      
+     
+  <b>For submission, you need to send your runs to rcd2020@firetask@gmail.com. </b>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Our Portfolio Section ======= -->
+    <section id="team" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Organizers</h2>
+
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul >
+              <li ><a href='https://www.isical.ac.in/~dipasree_t/'>Dipasree Pal </a>, IRSI, India</li>
+              <li ><a href='https://gdebasis.github.io/'>Debasis Ganguly </a>, IBM Research, Ireland</li>
+              <li ><a href='https://computing.dcu.ie/~sprocheta'>Procheta Sen</a>, Dublin City University, Ireland</li>             
+              <li ><a href='https://research.yahoo.com/researchers/manishav'>Manisha Verma</a>, Yahoo! Research, New York</li>
+            </ul>
+          </div>
+        </div>
+        <!--
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="row portfolio-container">
+  <div class="col-lg-4 col-md-6 filter-web">
+            <div class="portfolio-item">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 1">Web 1</a></h3>
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 1"><i class="icofont-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>-->
+
+      </div>
+    </section><!-- End Our Portfolio Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="results" class="faq ">
+      <div class="container">
+
+        <div class="section-title">
+        <h2>Important Dates</h2>
+
+
+        <ul>
+
+        <li><strike>Training Data Release</strike> (<a href="https://github.com/rcd2020firetask/RCD2020FIRETASK/tree/master/Train">Download link</a>)-	16th July, 2020   &nbsp;&#10003;</li> 
+        <li><strike>Test Data Release</strike> (<a href="https://github.com/rcd2020firetask/RCD2020FIRETASK/blob/master/test.txt">Download link</a>) -	16th July, 2020 &nbsp;&#10003;</li>
+        <li>Run Submission Deadline -	5th September, 2020 &nbsp;&#10003;</li>
+        <li>Results Declaration -	15th September, 2020 &nbsp;&#10003;</li>
+        <li>Working Note Submission -	8th October, 2020</li>
+        <li>Review Notifications -	25th October, 2020</li>
+        <li>Final Version of Working Note - 5th November, 2020    </li>    
+        </ul>
+        
+        </div>
+        <!--
+        <ul class="faq-list">
+          <li>
+            <a data-toggle="collapse" class="" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="icofont-simple-up"></i></a>
+            <div id="faq1" class="collapse show" data-parent=".faq-list">
+              <p>
+                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              </p>
+            </div>
+          </li>
+          <li>
+            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="icofont-simple-up"></i></a>
+            <div id="faq2" class="collapse" data-parent=".faq-list">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
+          <li>
+           
+          <li>
+            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="icofont-simple-up"></i></a>
+            <div id="faq6" class="collapse" data-parent=".faq-list">
+              <p>
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+              </p>
+            </div>
+          </li>
+        </ul>-->
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+      <section id="contact1" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Results</h2>
+          <p>Results for Task 1:</p>          
+          <p class='text-left'>
+            We got the runs from a single participating team - Adapt Centre (DCU). The team submitted 5 runs for tasks 1 and 2. The following are the results,
+            measued in terms of weighted BLEU scores, for task 1. More concretely, a variant of the <a href="https://en.wikipedia.org/wiki/BLEU">BLEU score</a> is
+            computed to measure the overlap between the predicted and the ground-truth of the information need nugget arising out of every conversational context.
+            Instead of the word n-grams, as used in the machine translation BLEU scores, we use weighted character n-grams (n=3,4,5) with more weight put on higher values of n.
+          <p></p><p></p>
+         <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+</style>
+<center>
+<br><br>  
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-1wig">Team Name</th>
+    <th class="tg-amwm">Run Name</th>
+    <th class="tg-1wig">Weighted BLEU Score</th>
+    <th class="tg-1wig">Word-level Jaccard Overlap</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-baqh">ADAPT</td>
+    <td class="tg-baqh">F6_4_model2</td>
+    <td class="tg-baqh">0.0636</td>
+    <td class="tg-baqh">0.0487</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">ADAPT</td>
+    <td class="tg-baqh">F7_4_model3</td>
+    <td class="tg-baqh">0.0989</td>
+    <td class="tg-baqh">0.0727</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">ADAPT</td>
+    <td class="tg-baqh">F5_0_model1</td>
+    <td class="tg-baqh">0.0984</td>
+    <td class="tg-baqh">0.0487</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">ADAPT</td>
+    <td class="tg-baqh">Y7_2_model5_2</td>
+    <td class="tg-baqh">0.0020</td>
+    <td class="tg-baqh">0.0000</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">ADAPT</td>
+    <td class="tg-baqh">F8_4_model4</td>
+    <td class="tg-amwm">0.1090</td>
+    <td class="tg-baqh">0.0636</td>
+  </tr>
+</tbody>
+</table>
+            </center>
+          </br>
+          Results for Task 2
+          </br>
+          <center>
+            <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-7btt">Team Name</th>
+    <th class="tg-7btt">Run Name</th>
+    <th class="tg-7btt">MAP</th>
+    <th class="tg-7btt">P@5</th>
+    <th class="tg-7btt">MRR</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">ADAPT</td>
+    <td class="tg-c3ow">F5_0_Model1</td>
+    <td class="tg-fymr">0.0021</td>
+    <td class="tg-0pky">0.0400</td>
+    <td class="tg-0pky">0.0922</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ADAPT</td>
+    <td class="tg-c3ow">Y7_2_Model5_2</td>
+    <td class="tg-0pky">0.0001</td>
+    <td class="tg-0pky">0.0160</td>
+    <td class="tg-0pky">0.0023</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ADAPT</td>
+    <td class="tg-c3ow">F7_4_model3</td>
+    <td class="tg-0pky">0.0016</td>
+    <td class="tg-fymr">0.0417</td>
+    <td class="tg-fymr">0.1086</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ADAPT</td>
+    <td class="tg-c3ow">F6_4_model2</td>
+    <td class="tg-0pky">0.0013</td>
+    <td class="tg-0pky">0.0160</td>
+    <td class="tg-0pky">0.0518</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ADAPT</td>
+    <td class="tg-c3ow">F8_4_model4</td>
+    <td class="tg-0pky">0.0003</td>
+    <td class="tg-0pky">0.0400</td>
+    <td class="tg-0pky">0.0704</td>
+  </tr>
+</tbody>
+</table>
+                   </center>
+        </div>
+        <div>
+          <p class='text-left'>
+        The ground-truth for task-1 for the test set topics (comprising of information need requiring Wikification) can be found in the following
+          <a href="https://drive.google.com/file/d/17PUCjOPkRZpjydPMrQYCHmbOURyHWuBw/view?usp=sharing">TREC topic formatted file</a>.
+          The <b>desc</b> field contains a piece of conversation (from a movie), whereas the <b>title</b> field contains the annotated piece of ground-truth
+          text forming the unit of information need.
+          </p>
+          
+          <p class='text-left'>
+          While evaluating the results, we took into account overlap for each individual conversational piece (and importantly, not on individual information need unit).
+            For example, in the following conversational piece there are two instances of information unit, namely <b>acacia tree</b> and <b>Ming Mecca chip</b>.
+            The reference string for this piece is considered to be the concatenation of these two. Also, the predictions for these two topics are concatenated for
+            computing the overlap with the ground-truth.
+          </p>
+            
+            <p class='text-center'><font face='courier'>
+            Mr. Cohen? Mr. Cohen? Please stop for a second Mr. Cohen?
+Damn it already! Stop following me. I'm not interested in your money. I'm searching for a way to understand our world. I'm searching for perfection. I don't deal with mediocre materialistic people like you! ... Take the <font color="red">acacia tree</font>...in East Africa. It is the most prevalent plant in all of Kenya because it has managed to secure its niche by defeating its major predator, the giraffe. To accomplish this, the tree has made a contract with a highly specialized red ant. The tree has evolved giant spores which act as housing for the ants In return for shelter, the ants supply defense. When a giraffe starts to eat the tree's leaves, the shaking branch acts like an alarm. The ants charge out and secrete an acid onto the giraffe's tongue. The giraffe learns its lesson and never returns. Without each other, the tree would be picked .... Just silicon. <font color="blue">A Ming Mecca chip</font>.  
+              </font></p>
+          <p class='text-left'>          
+            To reproduce results for task 1, simply use the <a href="https://github.com/gdebasis/luc4ir/blob/master/rcd/eval.sh">script</a>. Go through
+            the github readme to set up the environment. The script only requires the folder for task 1 runs to generate the BLEU score.
+          </p>
+        <p class='text-left'>
+          For task 1, the script uses two pieces of information -
+          a) the annotated text for each topic (see <a href="https://github.com/gdebasis/luc4ir/blob/master/rcd/rels_task1.tsv">here</a>) and
+          b) the equivalence relation of the topics (see <a href="https://github.com/gdebasis/luc4ir/blob/master/rcd/equiv.txt">here</a>) - to compute the overlap.          
+        </p>
+          <p class='text-left'>
+          For evaluating task 2 runs, please run this <a href='https://github.com/rcd2020firetask/RCD2020FIRETASK/blob/master/eval/equiv_treceval.sh'>script</a> which requires qrels and retrieval runs (formatted as TREC runs) as two inputs. The relevance judgments i.e. qrels are available <a href='https://github.com/rcd2020firetask/RCD2020FIRETASK/blob/master/eval/qrel-judgement-v4.txt'>here</a>. </p>
+          
+        </div>
+        
+        </div>
+        </section>
+    <!-- ======= Our Team Section ======= -->
+    <section id="contact" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact US</h2>
+          <p>Please reach out to the organizers for any questions. You can also mail to rcd2020firetask@gmail.com.</p>
+        </div>
+        <!--
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-1.jpg" alt="">
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+              <p>
+                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
+              </p>
+              <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-2.jpg" alt="">
+              <h4>Sarah Jhinson</h4>
+              <span>Product Manager</span>
+              <p>
+                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              </p>
+              <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-3.jpg" alt="">
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <p>
+                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
+              </p>
+              <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      -->
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+
+    <!-- ======= Contact Us Section ======= -->
+    <!--
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="contact-about">
+              <h3>Amoeba</h3>
+              <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="info">
+              <div>
+                <i class="icofont-google-map"></i>
+                <p>A108 Adam Street<br>New York, NY 535022</p>
+              </div>
+              <div>
+                <i class="icofont-envelope"></i>
+                <p>info@example.com</p>
+              </div>
+              <div>
+                <i class="icofont-phone"></i>
+                <p>+1 5589 55488 55s</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>-->
+    <!-- End Contact Us Section -->
+
+    <!-- ======= Map Section ======= -->
+    <!--
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sbg!4v1579767901424!5m2!1sen!2sbg" frameborder="0" style="border:0;" allowfullscreen=""></iframe>-->
+    </section><!-- End Map Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <!--
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Amoeba</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">-->
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-one-page-bootstrap-template-amoeba/ -->
+        <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>--><!-- End #footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
