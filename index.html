@@ -157,8 +157,11 @@
 
         <h1> Theme And Structure Of The Workshop </h1> 
         <br>
-        The proposed workshop will consist of two tracks: (1) a regular research paper track, and (2) a data challenge track.  
-           
+        The proposed workshop will consist of two tracks: 
+        <ol>
+          <li> a regular research paper track </li>
+          <li> a data challenge track. </li>  
+        </ol>
         <!--With the main task of retrieving passages corresponding to a dialogue, we also ask the participants to participate optionally
         in a stand-alone information extraction (IE) task, where the objective would be to output the span of text corresponding to the information need.
         A participant could choose one or both of the tasks to participate.-->
@@ -166,7 +169,7 @@
           <br>
           <ul>
               <li><font color='blue'>Track 1:</font> Regular research paper track. </li>
-              <li> The regular research paper track will solicit contributions related to the theme of supporting and understanding of conversational
+              <br>The regular research paper track will solicit contributions related to the theme of supporting and understanding of conversational
                 dialogues, which includes (but is not limited to):
                 <menu>
                    <li> Multi-modal and multi-view Information Retrieval – aggregating information from multiple online and offline datasources 
@@ -176,16 +179,15 @@
                    <li> Summarization of conversational dialogues.</li>
                    <li> Information Extraction from conversational dialogues, e.g.extracting action-items, decisions and their criteria fromgroup meetings.</li>
                    <li> Conversational IR, covering topics such as
-                      <menu>
+                     <menu>
                         <li> retrieving relevant pieces of information correspondingto information needs arising out from conversations.</li>
                         <li> Ways of presenting relevant information through interactive dialogues.</li>
                         <li> Asking clarifying questions to enrich information needdescription.</li>
                      </menu>
-                   </li>
-                </menu>
-              </li>
+                 </menu>
+                </li>
               <li><font color='blue'>Track 2:</font> Data challenge track. </li>
-              <li> <p>The data challenge track is designed to bring together researchers and practitioners to work on IR-specific problems on conversational 
+              <br> <p>The data challenge track is designed to bring together researchers and practitioners to work on IR-specific problems on conversational 
                 dialogues. The objective of the data track is to automatically contextualize a multi-party dialogue system as detailed below.
                 </p>
                 <p>
@@ -222,6 +224,40 @@
                 tweets, the proposed data challenge track requires contextualizing the individual aspects of a conversation.</li>
           </ul>
         </p>
+       <br><font color='blue'> Tasks. </font> Based on the two different threads of potential research investigation with the dataset, we will invite 
+          participation in two distinct tasks. Each participating team can participate in any one or both the tasks described as follows.
+          <menu> 
+            <li><font color='blue'>Task 1:</font> Given an excerpt of a dialogue act (as shown in Example-1), output the span of text indicating a potential piece
+              of information need (requiring contextualization), i.e.,in  case  of  the  example,  output  the  underlined  text  Fifth Amendment. To evaluate 
+              this task of information extraction, we propose to use a character n-gram based weighted BLEU score to compute the overlap of the ground-truth 
+              text span (e.g. ‘fifth amendment’) and the predicted text span (e.g.‘Constitution. The Fifth Amendment’).</li>
+            <li><font color='blue'>Task 2:</font> Given an excerpt of a dialogue act (see above example), return a ranked list of passages containing 
+              informationon the topic requiring contextualization, i.e., with respect to the above example return passages from Wikipedia that contain 
+              information on the Fifth Amendment. For this task, we will use mean average precision (MAP) and mean reciprocal rank (MRR) to compare and 
+              evaluate different approaches. These metrics would favour systems that retrieve a higher number of relevant passages towards the top ranks. 
+              A dataset comprising the document collection of Wikipedia passages, a set of 50 topics corresponding to excerpts from movie scripts, a set of 
+              ground-truth entities judged to be requiring contextualization along with relevance judgments for each is made publicly available at the 
+              RCD track webpage.</li>
+          </menu>
+        <section id="cfp" class="cfp">
+       <font color='blue'> Call for papers in the Data Challenge Track.</font> In addition tosubmitting working notes for experiments conducted to 
+          address the two proposed tasks of extracting potential snippets requiring contextualization (Task-1) and retrieving a ranked list of Wikipedia 
+          passages for each identified segment (Task-2), we also invite researchers to submit their work on other research directions conducted on this 
+          dataset. The call for papers in this track could correspond to (but are not limited to) the following topics.
+          <ol>
+            <li>Summarizing conversations.</li>
+            <li> Statistical and (deep) ‘Learning to rank’ approaches for Wikipediapassage retrieval.</li>
+            <li> Investigate transfer learning of neural models (e.g. trainedon other datasets such as MSMarco) for this task.</li>
+            <li> Graph-based techniques (e.g. Graph Convolutional Networks)for passage retrieval.</li>
+            <li> Investigate ‘Query Performance Prediction’ (QPP) in thecontext of conversations.</li>
+            <li> Investigate the feasibility of applying pre-trained models, e.g.transformer-based language models or transformer architectures fine-tuned on 
+              sentence classification or entailmenttasks, to identify the entities requiring contextualizationfrom conversations.</li>
+          </ol>
+         Thus, participating groups will have the opportunity to submit two types of peer-reviewed papers as a part of the data challenge track: (1) 
+          full-length research papers describing the research questions they investigated during the track and associated results/insights, and (2) short 
+          papers summarizing participation efforts. Accepted full papers will have a presentation slot during the workshop, while short papers will also be given an 
+          oral/posterpresentation slot. We anticipate participation from a wide range of internationalresearch groups who might be interested in this data challenge
+          given the popularity of the general topic of conversational IR. 
           </div>
     </section>
       <section id="dataset" class="dataset">
@@ -292,43 +328,7 @@ reevaluate the extended pool.
         </ul>
         
         </p>
-      <ul>
-        <li> <font color='blue'> Tasks. </font> Based on the two different threads of potential research investigation with the dataset, we will invite 
-          participation in two distinct tasks. Each participating team can participate in any one or both the tasks described as follows.
-          <menu> 
-            <li><font color='blue'>Task 1:</font> Given an excerpt of a dialogue act (as shown in Example-1), output the span of text indicating a potential piece
-              of information need (requiring contextualization), i.e.,in  case  of  the  example,  output  the  underlined  text  Fifth Amendment. To evaluate 
-              this task of information extraction, we propose to use a character n-gram based weighted BLEU score to compute the overlap of the ground-truth 
-              text span (e.g. ‘fifth amendment’) and the predicted text span (e.g.‘Constitution. The Fifth Amendment’).</li>
-            <li><font color='blue'>Task 2:</font> Given an excerpt of a dialogue act (see above example), return a ranked list of passages containing 
-              informationon the topic requiring contextualization, i.e., with respect to the above example return passages from Wikipedia that contain 
-              information on the Fifth Amendment. For this task, we will use mean average precision (MAP) and mean reciprocal rank (MRR) to compare and 
-              evaluate different approaches. These metrics would favour systems that retrieve a higher number of relevant passages towards the top ranks. 
-              A dataset comprising the document collection of Wikipedia passages, a set of 50 topics corresponding to excerpts from movie scripts, a set of 
-              ground-truth entities judged to be requiring contextualization along with relevance judgments for each is made publicly available at the 
-              RCD track webpage.</li>
-          </menu>
-        <section id="cfp" class="cfp">
-      <li> <font color='blue'> Call for papers in the Data Challenge Track.</font> In addition tosubmitting working notes for experiments conducted to 
-          address the two proposed tasks of extracting potential snippets requiring contextualization (Task-1) and retrieving a ranked list of Wikipedia 
-          passages for each identified segment (Task-2), we also invite researchers to submit their work on other research directions conducted on this 
-          dataset. The call for papers in this track could correspond to (but are not limited to) the following topics.
-          <ol>
-            <li>Summarizing conversations.</li>
-            <li> Statistical and (deep) ‘Learning to rank’ approaches for Wikipediapassage retrieval.</li>
-            <li> Investigate transfer learning of neural models (e.g. trainedon other datasets such as MSMarco) for this task.</li>
-            <li> Graph-based techniques (e.g. Graph Convolutional Networks)for passage retrieval.</li>
-            <li> Investigate ‘Query Performance Prediction’ (QPP) in thecontext of conversations.</li>
-            <li> Investigate the feasibility of applying pre-trained models, e.g.transformer-based language models or transformer architectures fine-tuned on 
-              sentence classification or entailmenttasks, to identify the entities requiring contextualizationfrom conversations.</li>
-          </ol>
-         Thus, participating groups will have the opportunity to submit two types of peer-reviewed papers as a part of the data challenge track: (1) 
-          full-length research papers describing the research questions they investigated during the track and associated results/insights, and (2) short 
-          papers summarizing participation efforts. Accepted full papers will have a presentation slot during the workshop, while short papers will also be given an 
-          oral/posterpresentation slot. We anticipate participation from a wide range of internationalresearch groups who might be interested in this data challenge
-          given the popularity of the general topic of conversational IR. 
-        </li>
-      </ul>
+      
           
         <h1>Workshop Format (Half/Full-day) And Planned Activities</h1>
          <p class="description">
