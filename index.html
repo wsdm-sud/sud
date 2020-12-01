@@ -51,7 +51,7 @@
           <li><a href="#about">Motivation & Description</a></li>
           <li><a href="#track">Call for Papers</a></li>
           <li><a href="#guidelines">Submission Guidelines</a></li>
-          <li><a href="#results">Important Dates</a></li>
+          <li><a href="#impdates">Important Dates</a></li>
           <li><a href="#program">Program</a></li>
           <!--li><a href="#contact1">Results</a></li-->
           <li><a href="#team">Organizers</a></li>
@@ -240,6 +240,32 @@ After acceptance, no additional authors can be added.
 
         </div>
 
+    <section id="impdates">
+      <div class="container">
+
+        <!--div class="section-title"-->
+        <h2>Important Dates</h2>
+
+
+        <ul>
+          <li> Submission deadline - 26th January, 2021 </li>
+          <li> Notifications- 23rd February, 2021 </li>
+          <li> Camera-Ready - 2nd March, 2021 </li>
+          <!--li> Workshop -  March 12, 2021</li-->
+        <!--li><strike>Training Data Release</strike> (<a href="https://github.com/rcd2020firetask/RCD2020FIRETASK/tree/master/Train">Download link</a>)-	16th July, 2020   &nbsp;&#10003;</li> 
+        <li><strike>Test Data Release</strike> (<a href="https://github.com/rcd2020firetask/RCD2020FIRETASK/blob/master/test.txt">Download link</a>) -	16th July, 2020 &nbsp;&#10003;</li>
+        <li>Run Submission Deadline -	5th September, 2020 &nbsp;&#10003;</li>
+        <li>Results Declaration -	15th September, 2020 &nbsp;&#10003;</li>
+        <li>Working Note Submission -	8th October, 2020</li>
+        <li>Review Notifications -	25th October, 2020</li>
+        <li>Final Version of Working Note - 5th November, 2020    </li-->    
+        </ul>
+        
+        </div>
+      </div>
+    </section>
+
+
     </section>
         <section id="program" class="program">
           <div class="container">
@@ -263,148 +289,10 @@ After acceptance, no additional authors can be added.
               
       </ul>
          </p>
-        <!--
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box">
-            <div class="icon"><i class="icofont-computer"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-          </div>
-        </div>
-      -->
 
       </div>
-    </section><!-- End Services Section -->
+    </section>
 
-    <!-- ======= Call To Action Section ======= -->
-    <!--section id='dataset' class="about">
-      <div class="container">
-
-        <div class="text-center">
-          <h3>Dataset</h3>
-        </div>
-        <div>
-          <p class='text-left'>
-            The movie scripts that were chosen to depict situations requiring contextualization involve relatively long conversations between one or more actors.
-            For each movie script, we <b>annotated a span of text</b> that were manually assessed to be indicative of potential contextualization as shown in section above. 
-          We selected a number of play-style movie scripts for annotation, i.e. the ones which involve long dialogue acts for plot development. In total, we annotated 4 movie scripts, namely</p>
-          <div class="row">
-          <div class="col-lg-12">
-            <center>
-          <ul>
-            <li><a href="https://www.imdb.com/title/tt0138704/">Pi</a> </li>
-            <li><a href="https://www.imdb.com/title/tt0050083/">12 angry men</a></li>
-            <li><a href="https://www.imdb.com/title/tt0119217/">Good will hunting</a></li>
-            <li><a href="https://www.imdb.com/title/tt0091605/">The name of the rose</a></li>
-            <!--li><a href="https://www.imdb.com/title/tt0049833">The Ten Commandments </a></li>
-          </ul>
-            </center>
-          </div>
-            The text extracted from the movie script along with the <a href="https://brat.nlplab.org/"> &nbsp; BRAT &nbsp;</a> formatted annotation file can be found&nbsp;
-      <a href="https://github.com/rcd2020firetask/RCD2020FIRETASK/tree/master/dialogues">here</a>.         
-          </div>
-
-          <p class='text-left'>
-            <!--To facilitate easy participation in the task, we will indexed version of the collection.>
-          
-        </p-->
-
-        <!--div class='text-left'>
-        In the training phase we release 25 dialogue acts making explicitly available the annotated text spans to the participants by marking them up. The participants can then make use the dialogue in order to formulate queries for retrieving relevant passages. 
-For task 1 the output will be in the format &lt;qid&gt; &lt;Tab&gt; &lt;Information Need&gt;. Each topic will be in newline. For task 1 the link for the wikipedia collection is here <a href="https://drive.google.com/file/d/1JgiYwTXMkoAUaWzgDeL7LQP5r-G-ReAM/view?usp=sharing">Wikipedia Collection</a>.
-        For Task 2, the output format will be same as trec result format. 
-        </div-->
-
-        <!--div class='text-left'>
-        In the test phase, we will release only the entire dialogue act without the explicit annotation of the precise information need and the relevance judgments (to represent a more realistic situation). The participants are expected to develop and tune their methodologies on the training set and submit the results with optimal configurations of the system on the test set.
-        The link for test data set is here <a href="https://github.com/rcd2020firetask/RCD2020FIRETASK/blob/master/test.txt">Test Data</a>.
-        </div>
-
-    <p class="text-left">
-    <h3> Run Submission Format </h3>
-    For each query in the <a href="https://github.com/rcd2020firetask/RCD2020FIRETASK/blob/master/test.txt">test topic file</a>, the participants need to submit automatically generated outputs one or both the tasks.
-
-    <ul>
-
-    <li><b>Task-1:</b> Participants need to submit a two column file where each line contains the query id and the predicted text span from the given description.
-    An example task-1 submission file looks like
-    <div align="center">
-    <pre>
-    1 [\t] That's in the Constitution. The Fifth Amendment.
-    4 [\t] cute little switchknife
-    ...
-    ...
-    </pre>
-    </div>
-    </li>
-
-    <li><b>Task-2:</b> Participants need to submit a standard TREC .res formatted file comprising of the following. The first column denotes query id (matches the ids of the test topics), the second is unused, the third is the retrieved document (Wiki passage) identifier, the fourth is the rank of this document (passage), the fifth is the similarity score and the sixth column denotes a run-name to distinguish between different runs (the run-name should be meaningful and representative of the method used to generate the run).
-    An example task-2 submission file looks like
-    <div align="center">
-    <pre>
-    1	Q0	10046153-34	1 13.23 BM25_termselection
-    1	Q0	10275774-4	2 12.58 BM25_termselection
-    ...
-    ...
-    2	Q0	5202223-19	1 7.64 BM25_termselection
-    2	Q0	527390-11	2 7.37 BM25_termselection
-    ...
-    ...
-    </pre>
-    </div>
-    </ul>    
-    </div>
-
-      
-    Note that since the retrievable units for our track are Wikipedia passages (not documents), in the collection provided we have assigned unique identifiers
-      to passages. The naming convention for a passage is <b>doc number</b>-<b>passage offset</b>, i.e. two integers separated by a hyphen character
-      (encoded within the <b>pno</b> tags within the collection provided).
-    Task-2 participants will be required to print these identifiers in the third column of the run submission file. Using other arbitrary identifiers
-    would not enable us to match the relevant retrieved passages from the ones in the qrel file. A sample XML excerpt for a Wikipedia document, titled
-<a href="https://en.wikipedia.org/wiki/Anarchism">Anarchism</a> is shown below. 
-</p>
-<br>
-<br>
-<br>
-
-<p>      
-<textarea rows="35" cols="80" style="border:none;">
-<doc>
- <docno> 2 </docno>
-<page>
-<p>
- <pno> 2-1 </pno>
-    <title>Anarchism</title>
-    <ns>0</ns>
-    <id>12</id>
-    <revision>
-      <id>918470367</id>
-      <parentid>918111101</parentid>
-      <timestamp>2019-09-28T20:40:50Z</timestamp>
-      <contributor>
-        <username>Brainulator9</username>
-        <id>11191612</id>
-      </contributor>
-      <comment>/* Sources */Remove redundant |year= parameter from CS1 citations;</comment>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-      <text xml:space="preserve">{{good article}}
-{{redirect2|Anarchist|Anarchists|other uses|Anarchists (disambiguation)}}
-{{pp-move-indef}}
-{{short description|Political philosophy that advocates self-governed societies}}
-{{use dmy dates|date=July 2018}}
-{{use British English|date=January 2014}}
-{{anarchism sidebar}}
-{{basic forms of government}}
-'''Anarchism''' is an [[Anti-authoritarianism|anti-authoritarian]] [[political philosophy]]{{sfnm|1a1=McLaughlin|1y=2007|1p=59|2a1=Flint|2y=2009|2p=27}} that rejects [[Hierarchy|hierarchies]] deemed unjust and advocates their replacement with [[Workers' self-management|self-managed]], [[Self-governance|self-governed]] societies based on voluntary, [[cooperative]] institutions. These institutions are often described as [[Stateless society|stateless societies]],{{sfnm|1a1=Sheehan|1y=2003|1p=85|2a1=Craig|2y=2005|2p=14}} although several authors have defined them more specifically as distinct institutions based on non-hierarchical or [[Free association (communism and anarchism)|free associations]].{{sfn|Suissa|2006|p=7}} Anarchism's central disagreement with other ideologies is that it holds the [[Sovereign state|state]] to be undesirable, unnecessary, and harmful.{{sfnm|1a1=McLean|1a2=McMillan|1y=2003|loc=Anarchism|2a1=Craig|2y=2005|2p=14}}
-</p>
-</textarea>
-  </p>      
-     
-  <b>For submission, you need to send your runs to rcd2020@firetask@gmail.com. </b>
-    </section--><!-- End Call To Action Section -->
-
-    <!-- ======= Our Portfolio Section ======= -->
     <section id="team" class="call-to-action">
       <div class="container">
 
@@ -430,169 +318,6 @@ For task 1 the output will be in the format &lt;qid&gt; &lt;Tab&gt; &lt;Informat
 
       </div>
     </section>  <!-- End Our Portfolio Section -->
-
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="results" class="faq ">
-      <div class="container">
-
-        <!--div class="section-title"-->
-        <h2>Important Dates</h2>
-
-
-        <ul>
-          <li> Submission deadline - 26th January, 2021 </li>
-          <li> Notifications- 23rd February, 2021 </li>
-          <li> Camera-Ready - 2nd March, 2021 </li>
-          <!--li> Workshop -  March 12, 2021</li-->
-        <!--li><strike>Training Data Release</strike> (<a href="https://github.com/rcd2020firetask/RCD2020FIRETASK/tree/master/Train">Download link</a>)-	16th July, 2020   &nbsp;&#10003;</li> 
-        <li><strike>Test Data Release</strike> (<a href="https://github.com/rcd2020firetask/RCD2020FIRETASK/blob/master/test.txt">Download link</a>) -	16th July, 2020 &nbsp;&#10003;</li>
-        <li>Run Submission Deadline -	5th September, 2020 &nbsp;&#10003;</li>
-        <li>Results Declaration -	15th September, 2020 &nbsp;&#10003;</li>
-        <li>Working Note Submission -	8th October, 2020</li>
-        <li>Review Notifications -	25th October, 2020</li>
-        <li>Final Version of Working Note - 5th November, 2020    </li-->    
-        </ul>
-        
-        </div>
-        <!--
-        <ul class="faq-list">
-
-          <li>
-            <a data-toggle="collapse" class="" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="icofont-simple-up"></i></a>
-            <div id="faq1" class="collapse show" data-parent=".faq-list">
-              <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="icofont-simple-up"></i></a>
-            <div id="faq2" class="collapse" data-parent=".faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-           
-
-          <li>
-            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="icofont-simple-up"></i></a>
-            <div id="faq6" class="collapse" data-parent=".faq-list">
-              <p>
-                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-              </p>
-            </div>
-          </li>
-
-        </ul>-->
-
-      <!--/div-->
-    </section><!-- End Frequently Asked Questions Section -->
-      <!--section id="contact1" class="team section-bg">
-      <div class="container">
-
-        <div class="section-title">
-       </div>
-        <div>
-          <p class='text-left'>
-        The ground-truth for task-1 for the test set topics (comprising of information need requiring Wikification) can be found in the following
-          <a href="https://drive.google.com/file/d/17PUCjOPkRZpjydPMrQYCHmbOURyHWuBw/view?usp=sharing">TREC topic formatted file</a>.
-          The <b>desc</b> field contains a piece of conversation (from a movie), whereas the <b>title</b> field contains the annotated piece of ground-truth
-          text forming the unit of information need.
-          </p>
-          
-          <p class='text-left'>
-          While evaluating the results, we took into account overlap for each individual conversational piece (and importantly, not on individual information need unit).
-            For example, in the following conversational piece there are two instances of information unit, namely <b>acacia tree</b> and <b>Ming Mecca chip</b>.
-            The reference string for this piece is considered to be the concatenation of these two. Also, the predictions for these two topics are concatenated for
-            computing the overlap with the ground-truth.
-          </p>
-            
-            <p class='text-center'><font face='courier'>
-            Mr. Cohen? Mr. Cohen? Please stop for a second Mr. Cohen?
-Damn it already! Stop following me. I'm not interested in your money. I'm searching for a way to understand our world. I'm searching for perfection. I don't deal with mediocre materialistic people like you! ... Take the <font color="red">acacia tree</font>...in East Africa. It is the most prevalent plant in all of Kenya because it has managed to secure its niche by defeating its major predator, the giraffe. To accomplish this, the tree has made a contract with a highly specialized red ant. The tree has evolved giant spores which act as housing for the ants In return for shelter, the ants supply defense. When a giraffe starts to eat the tree's leaves, the shaking branch acts like an alarm. The ants charge out and secrete an acid onto the giraffe's tongue. The giraffe learns its lesson and never returns. Without each other, the tree would be picked .... Just silicon. <font color="blue">A Ming Mecca chip</font>.  
-              </font></p>
-          <p class='text-left'>          
-            To reproduce results for task 1, simply use the <a href="https://github.com/gdebasis/luc4ir/blob/master/rcd/eval.sh">script</a>. Go through
-            the github readme to set up the environment. The script only requires the folder for task 1 runs to generate the BLEU score.
-          </p>
-        <p class='text-left'>
-          For task 1, the script uses two pieces of information -
-          a) the annotated text for each topic (see <a href="https://github.com/gdebasis/luc4ir/blob/master/rcd/rels_task1.tsv">here</a>) and
-          b) the equivalence relation of the topics (see <a href="https://github.com/gdebasis/luc4ir/blob/master/rcd/equiv.txt">here</a>) - to compute the overlap.          
-        </p>
-          <p class='text-left'>
-          For evaluating task 2 runs, please run this <a href='https://github.com/rcd2020firetask/RCD2020FIRETASK/blob/master/eval/equiv_treceval.sh'>script</a> which requires qrels and retrieval runs (formatted as TREC runs) as two inputs. The relevance judgments i.e. qrels are available <a href='https://github.com/rcd2020firetask/RCD2020FIRETASK/blob/master/eval/qrel-judgement-v4.txt'>here</a>. </p>
-          
-        </div>
-        
-        </div>
-        </section-->
-    <!-- ======= Our Team Section ======= -->
-    <section id="contact" class="team section-bg">
-      <div class="container">
-
-        <!--
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/team/team-1.jpg" alt="">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>
-                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-              </p>
-              <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href=""><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/team/team-2.jpg" alt="">
-              <h4>Sarah Jhinson</h4>
-              <span>Product Manager</span>
-              <p>
-                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-              </p>
-              <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href=""><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/team/team-3.jpg" alt="">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p>
-              <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href=""><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      -->
-
-      </div>
-    </section><!-- End Our Team Section -->
 
   <!-- ======= Footer ======= -->
   <!--
