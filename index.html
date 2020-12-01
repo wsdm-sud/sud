@@ -126,7 +126,7 @@
             <b>Information Retrieval</b> </li>
             <li> <b>Data Mining and Machine Learning</b> </li>
             <li><b>Natural Language Processing </b></li>
-            <li><b>Human Computer Interaction </b></li> –
+            <li><b>Human Computer Interaction </b> etc.</li>
             </ul>
             to further advance the state of research in applications and impact of information retrieval to digital two-party or multi-party text or multi-modal dialogues. Given the diverse audience, participants and program of WSDM, it would be an ideal venue to advance research on such topics.
 
@@ -207,65 +207,18 @@ While the regular track invites submissions on both the understanding on and the
         <div>
         <h3>Data Challenge Track </h3>
 
-        <p>The data challenge track is designed to bring together researchers and practitioners to work on IR-specific problems on conversational 
-           dialogues. The objective of the data track is to automatically contextualize a multi-party dialogue system as detailed below.
-                </p>
-                <p>
-                Traditional information retrieval (IR) involves retrieving relevant documents from a collection given a user query (usually comprised of a small number 
-                of keywords). With the advancement of automated dialog systems, using IR models as a component in such dialog-based interactive systems has 
-                increasingly drawn attention of the research community. Conversational IR is potentially useful to retrieve relevant documents or passages 
-                towards constructing an answer for a query/question seeking information on a particular topic during an interactive chat-session. An example 
-                use-case is anautomated customer-care chat-bot that seeks to answer a specific user query (e.g. ‘How do I restart my Macbook?’) with a relevant 
-                answer (the information feeding in to the relevant answer formulated by either directly retrieving previous responses or constructing them 
-                automatically from retrieving candidate passages). 
-                </p>
-                <p>
-                Different from the existing notion of conversational IR, involving retrieving previous responses or passages from a collection to aid an interactive chat-bot, the focus of our work is to supplement information for a particular 
-                topic within a two or multi-party dialogue with relevant information that contextualizes the conversation itself. As an example, consider the
-                situation when two persons (let us call them A and B) are chatting to each other through a chatserver, e.g. Google Hangouts, Whatsapp etc. 
-                It may happen that A talks about a topic or event of which B is not fully aware of. In that case, the chat server (in addition to sending 
-                the message from A could contextualize the message with additional information). As a concrete example, with A’s following message -
-                </p>
-                <p>
-                A: “I absolutely loved dark.”,
-                </p>
-                <p>
-                B may have trouble making sense of this sentence in its literal form unless they know that the entity ‘Dark’ in this 
-                context refers to a popular Netflix series. However, it could be easier for B to understand and come up with a prompt response to the message 
-                if the chat-server provides this additional information to B as apart of the message itself. From the user interface perspective, A may not 
-                even be aware of this automatic contextualization by the conversational assistance agent and to them it appears as if B came up with a prompt 
-                response. Figure 1 schematically depicts this situation with an example communication between two parties.
-                </p>
-                <p>
-                
-                The purpose of the data challenge track thus is to encourage research on methodologies that are able to proactively recognize potential entities in the conversation that might require 
+        <p>The data challenge track is a continuation of our effort to investigate the research question of contextualization of conversational 
+           dialogues. We have recently organized a shared task - <b>Retrieval from Conversational Dialogues (RCD) </b> in FIRE 2020 (<a href="https://rcd2020firetask.github.io/RCD2020FIRETASK/">shared task link</a>).
+        </p>
+                The purpose of the data challenge track is to encourage research on methodologies that are able to proactively recognize potential entities in the conversation that might require 
                 further elaboration (from the point-of-view of the user to whom the conversation was targeted)and also retrieves informative content about these 
                 entities so to facilitate better participation in the conversation. Although prior work has looked into contextualizing short documents, such as 
-                tweets, the proposed data challenge track requires contextualizing the individual aspects of a conversation.</li>
+                tweets, the proposed data challenge track requires contextualizing the individual aspects of a conversation.
         </p>
-        </div>
 
-       <br><font color='blue'> Tasks. </font> Based on the two different threads of potential research investigation with the dataset, we will invite 
-          participation in two distinct tasks. Each participating team can participate in any one or both the tasks described as follows.
-          <menu> 
-            <li><font color='blue'>Task 1:</font> Given an excerpt of a dialogue act (as shown in Example-1), output the span of text indicating a potential piece
-              of information need (requiring contextualization), i.e.,in  case  of  the  example,  output  the  underlined  text  Fifth Amendment. To evaluate 
-              this task of information extraction, we propose to use a character n-gram based weighted BLEU score to compute the overlap of the ground-truth 
-              text span (e.g. ‘fifth amendment’) and the predicted text span (e.g.‘Constitution. The Fifth Amendment’).</li>
-            <li><font color='blue'>Task 2:</font> Given an excerpt of a dialogue act (see above example), return a ranked list of passages containing 
-              informationon the topic requiring contextualization, i.e., with respect to the above example return passages from Wikipedia that contain 
-              information on the Fifth Amendment. For this task, we will use mean average precision (MAP) and mean reciprocal rank (MRR) to compare and 
-              evaluate different approaches. These metrics would favour systems that retrieve a higher number of relevant passages towards the top ranks. 
-              A dataset comprising the document collection of Wikipedia passages, a set of 50 topics corresponding to excerpts from movie scripts, a set of 
-              ground-truth entities judged to be requiring contextualization along with relevance judgments for each is made publicly available at the 
-              RCD track webpage.</li>
-          </menu>
-        <section id="cfp" class="cfp">
-       <font color='blue'> Call for papers in the Data Challenge Track.</font> In addition tosubmitting working notes for experiments conducted to 
-          address the two proposed tasks of extracting potential snippets requiring contextualization (Task-1) and retrieving a ranked list of Wikipedia 
-          passages for each identified segment (Task-2), we also invite researchers to submit their work on other research directions conducted on this 
-          dataset. The call for papers in this track could correspond to (but are not limited to) the following topics.
-          <ol>
+
+            The call for papers in this track could correspond to (but are not limited to) the following topics.
+            <ol>
             <li>Summarizing conversations.</li>
             <li> Statistical and (deep) ‘Learning to rank’ approaches for Wikipediapassage retrieval.</li>
             <li> Investigate transfer learning of neural models (e.g. trainedon other datasets such as MSMarco) for this task.</li>
@@ -273,84 +226,20 @@ While the regular track invites submissions on both the understanding on and the
             <li> Investigate ‘Query Performance Prediction’ (QPP) in thecontext of conversations.</li>
             <li> Investigate the feasibility of applying pre-trained models, e.g.transformer-based language models or transformer architectures fine-tuned on 
               sentence classification or entailmenttasks, to identify the entities requiring contextualizationfrom conversations.</li>
-          </ol>
-         Thus, participating groups will have the opportunity to submit two types of peer-reviewed papers as a part of the data challenge track: (1) 
+            </ol>
+            Thus, participating groups will have the opportunity to submit two types of peer-reviewed papers as a part of the data challenge track: (1) 
           full-length research papers describing the research questions they investigated during the track and associated results/insights, and (2) short 
           papers summarizing participation efforts. Accepted full papers will have a presentation slot during the workshop, while short papers will also be given an 
           oral/posterpresentation slot. We anticipate participation from a wide range of internationalresearch groups who might be interested in this data challenge
           given the popularity of the general topic of conversational IR. 
-          </div>
-    </section>
+        </div>
+
+        <section id="cfp" class="cfp">
+        </section>
+
       <section id="dataset" class="dataset">
         <div class="container">
-
-      <h1>Dataset Description </h1>
-      <p>
-      To study the problem under a laboratory-based reproducible setting, we propose a number of simplifications. First, since collecting multi-party chat dialogues
-      can lead to individual privacy concerns, items requiring contextualization. Using movie scripts as a starting point, the task requires participants to retrieve
-      relevant information from Wikipedia given a dialogue span from a movie script. The task of the participants is to identify important or central entities in a
-      span of movie dialogues and to subsequently retrieve a list of passages that provide more contextor information about entities in that span. The annotated 
-      span oftext (i.e. the one requiring contextualization) will not be disclosed to the participants. One such example is the underlined span of text (requiring
-      contextualization) from the movie ‘12 angry men’shown as follows.
-      </p>
-      <p>
-      Example-1:A part of dialogue act from the movie ‘12 angry men’.
-      <br>
-        NO.2:guilty. I thought it was obvious. I mean nobody proved otherwise.
-      <br>
-        NO. 8:is on the prosecution. The defendant doesn’t have to openhis mouth. That’s in the Constitution. TheFifth Amendment.You’ve heard of it.
-      <br>
-        NO. 2:  I... what I meant... well, anyway, I think he was guilty.
-      </p>
-      <p>
-        We selected a number of play-style movie scripts for annotation, i.e.the ones which involve long dialogue acts for plot development.The participants 
-        are provided with a manually annotated sample of dialogue spans extracted from four movie scripts along with entire movie scripts. The collection from 
-        which passages are to be retrieved for contextualization is the Wikipedia collection (dump from 2019). Each document in the Wikipedia collection is 
-        composed of explicitly marked-up passages (in the form of the paragraph tags).The retrievable units in our task are the passages (instead of 
-        whole documents).
-      </p>
-        <p>
-          The dataset for this track comprises of:
-        <ul>
-        <li> <b>Document Collection</b>: The objective in this track (Task-2) is to retrieve a ranked list of Wikipedia passages. We release a pre-processed version of Wikipedia
-dump, where we have enclosed each paragraph of a Wikipedia page into separate XML tags. Each tag is assigned a unique identifier. The basic retrieval unit for this ranking
-task is hence a Wikipedia passage. Note that it's up to you if you want to treat the passages as units contained within a document or treat them independently while ranking them.
-Each passage has been (and will be) judged independently.
-          
-          There are two options for the collection that you can download.
-          <ul>
-          <li> A TREC formatted markup document that for the passage demarcated Wikipedia collection from this
-<a href="https://drive.google.com/file/d/1JgiYwTXMkoAUaWzgDeL7LQP5r-G-ReAM/view?usp=sharing">Google drive link</a>.
-          </li>
-          <li> A more simplified format (a tab separated file text file) containing the passage id in the first column and passage content in the second.
-                    You can get the gzipped file from this <a href="https://drive.google.com/file/d/1iujCKja301ciGnk3nvErUJebF7_Tc7pD/view?usp=sharing">Google drive link</a>.
-          </li>
-          </ul>
-          
-          A sample mavenized Lucene project to help the participants get started with indexing and retrieval can be found
-          <a href="https://github.com/gdebasis/luc4ir">here</a>.
-          
-        </li>
-        <li> <b> Queries/Topics: </b> A query for the ranking task contains a dialog piece from a movie. The topic file is similar in structure to a standard TREC query.
-        Each query (topic) starts with a <b>topic</b> tag. The <b>num</b> tag assigns a unique identifier to the topic. You have to use these ids in the output <b>results</b>
-file (more on this later). Each topic has a <b>desc</b> tag which contains a list of dialogues enclosed within '<b>p</b>' tags. Each 'p' tag indicates a change of speaker.
-Some topics have identical description fields because while annotating we identified multiple concepts from the same dialog piece that may require contextualization.
-In such a case, the one with a smaller number is associated to the concept which occurs in the text before the other corresponding to the larger number.
-In addition to the 'desc' field, the training topics contains an additional <b>title </b> field which describes the exact span of text representing the information need.
-We make this information available for the participants to get an idea about the types of text spans that would typically require contextualization from dialog streams.
-
-        </li>
-        <li><b>Relevance Judgments: </b> For the training set of topics, we release a <b>TREC qrel</b> formatted file with 4 white-space separated columns, the first column
-denoting query id, the second unused, the third - a string denoting the passage (basic retrieval unit) identifier and the fourth indicating the relevance label (1/0) in our case.
-The training topics along with the relevance judgments can be downloaded from this <a href="https://github.com/rcd2020firetask/RCD2020FIRETASK/tree/master/Train">link to training data</a>. To obtain the relevance assessments, we constructed a pool of passages by a combination of retrieval with a number of standard IR models, such as BM25, LM, DFR etc. Passages in the pool were assessed by the organizors with respect to each input dialogue.
-For test topics, we will add the documents collected from the participating systems in the pool and
-reevaluate the extended pool.
-        </li>
-        </ul>
-        
-        </p>
-      
-          
+         
         <h1>Workshop Format (Half/Full-day) And Planned Activities</h1>
          <p class="description">
            We propose a <font color='blue'> full-day workshop</font>. The workshop will include presentation of papers accepted through peer-review and results of the data challenge track, 
@@ -379,6 +268,7 @@ reevaluate the extended pool.
               </p>
            </p>
         </div>
+
     </section>
         <section id="program" class="program">
           <div class="container">
