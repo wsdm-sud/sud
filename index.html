@@ -49,7 +49,8 @@
         <ul>
           <li class="active"><a href="#header">Home</a></li>
           <li><a href="#about">Motivation & Description</a></li>
-          <li><a href="#track">Call for Papers</a></li>
+          <li><a href="#papers">Call for Papers</a></li>
+          <li><a href="#dtrack">Data Track</a></li>
           <li><a href="#guidelines">Submission Guidelines</a></li>
           <li><a href="#impdates">Important Dates</a></li>
           <li><a href="#program">Program</a></li>
@@ -144,7 +145,7 @@ While the regular track invites submissions on both the understanding on and the
     </section><!-- End About Us Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="track" class="portfolio section-bg">
+    <section id="papers" class="portfolio section-bg">
     <div class="container">
 
         <h1> Call for Papers</h1> 
@@ -198,33 +199,33 @@ While the regular track invites submissions on both the understanding on and the
                  </menu>
                 </li>
         <br><br>
+        <section id="Data Challenge" class="portfolio section-bg">
+        <div class="container">
 
-        <h3>Data Challenge Track </h3>
-
-        <p>The data challenge track is a continuation of our effort to investigate the research question of contextualization of conversational 
-           dialogues. We have recently organized a shared task - <b>Retrieval from Conversational Dialogues (RCD) </b> in FIRE 2020 (<a href="https://rcd2020firetask.github.io/RCD2020FIRETASK/">shared task link</a>).
-        </p>
-                The purpose of the data challenge track is to encourage research on methodologies that are able to proactively recognize potential entities in the conversation that might require 
-                further elaboration (from the point-of-view of the user to whom the conversation was targeted)and also retrieves informative content about these 
-                entities so to facilitate better participation in the conversation. Although prior work has looked into contextualizing short documents, such as 
-                tweets, the proposed data challenge track requires contextualizing the individual aspects of a conversation.
-        </p>
-           <br>
+           <p>The data challenge track is a continuation of our effort to investigate the research question of contextualization of conversational 
+           dialogues.  A shared task was recently organized - <b>Retrieval from Conversational Dialogues (<a href="https://rcd2020firetask.github.io/RCD2020FIRETASK/">RCD</a>) </b> at FIRE 2020.
+            </p>
+                Data challenge track seeks submissions that investigate both understanding of sample dialogues and support such conversations with more contextual information. 
+                As part of the challenge, we are releasing conversational data for two tasks. The first task is to detect entities in these conversations. The second task is to retrieve informative content about these 
+                entities to facilitate user understanding. Although prior work has looked into contextualizing short documents, such as 
+                tweets, the proposed data challenge track requires contextualizing aspects of a conversation.
+            </p>
+            <br>
             <p>
-            Papers submitted to this track <b>must</b> report at least one experiment with the released dataset as a part of the RCD track. Authors are encouraged to either
-            experiment and report results for the two RCD tasks - that of predicting the text spans from movie dialogues or of retrieving relevant information given a dialog context,
-            or reporting experiments on <b>novel tasks on this dataset</b>. 
+            Papers submitted to this track <b>must</b> report at least one experiment with the dataset released as a part of the RCD track. Authors are encouraged to either
+            experiment and report results for the two RCD tasks - that of detecting entities in the text spans from movie dialogues or of retrieving relevant information given a dialog context, or reporting experiments on <b>novel tasks on this dataset</b>. 
             </p>
 
-            The call for papers in this track could cover (but are not limited to) the following topics.
+            The call for papers in this track covers (but is not limited to) the following topics.
             <ol>
-            <li>Summarizing conversations.</li>
-            <li> Statistical and (deep) ‘Learning to rank’ approaches for Wikipediapassage retrieval.</li>
-            <li> Investigate transfer learning of neural models (e.g. trainedon other datasets such as MSMarco) for this task.</li>
-            <li> Graph-based techniques (e.g. Graph Convolutional Networks)for passage retrieval.</li>
-            <li> Investigate ‘Query Performance Prediction’ (QPP) in thecontext of conversations.</li>
-            <li> Investigate the feasibility of applying pre-trained models, e.g.transformer-based language models or transformer architectures fine-tuned on 
-              sentence classification or entailmenttasks, to identify the entities requiring contextualizationfrom conversations.</li>
+            <li>Entity linking in dialogues</li>
+            <li>Summarizing conversations</li>
+            <li> Methods for passage retrieval supporting conversations</li>
+            <li> Aoproaches for image retrieval supporting conversations</li>
+            <li> Transfer learning to support conversations from different domains</li>
+            <li> Graph-based techniques (e.g. Graph Convolutional Networks) to understand conversations</li>
+            <li> Investigate ‘Query Performance Prediction’ (QPP) in the context of conversations</li>
+            <li> Adaptation of large scale models, e.g.transformer-based language models to contextualize conversations better.</li>
             </ol>
         </div>
 
